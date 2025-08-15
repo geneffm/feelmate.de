@@ -239,7 +239,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* MODALS */}
+      {/* TRIAL MODAL */}
       {openTrial && (
         <div
           className="fixed inset-0 bg-black/40 grid place-items-center p-4"
@@ -249,4 +249,58 @@ export default function App() {
           <div className="bg-white rounded-2xl w-full max-w-md p-6 shadow-soft">
             <h3 className="text-lg font-semibold">Gratis testen</h3>
             <p className="mt-2 text-sm text-gray-600">
-              Erlebe 5 Nachrichten kostenlos. Danach kannst
+              Erlebe 5 Nachrichten kostenlos. Danach kannst du entscheiden, wie
+              du weitermachen willst.
+            </p>
+            <div className="mt-4 flex justify-end gap-2">
+              <button
+                onClick={() => setOpenTrial(false)}
+                className="px-4 py-2 rounded-xl border border-gray-300"
+              >
+                Schließen
+              </button>
+              <a
+                href="#preise"
+                className="px-4 py-2 rounded-xl bg-brand-600 text-white"
+              >
+                Zu den Preisen
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* CHECKOUT MODAL (Paywall) */}
+      {openCheckout && (
+        <div
+          className="fixed inset-0 bg-black/40 grid place-items-center p-4"
+          role="dialog"
+          aria-modal
+        >
+          <div className="bg-white rounded-2xl w-full max-w-md p-6 shadow-soft">
+            <h3 className="text-lg font-semibold">Kauf / Mitgliedschaft</h3>
+            <p className="mt-2 text-sm text-gray-600">
+              Für unbegrenztes Weiterschreiben wähle Guthaben oder
+              Mitgliedschaft. Der Checkout wird im nächsten Schritt eingebunden.
+            </p>
+            <div className="mt-4 flex justify-end gap-2">
+              <button
+                onClick={() => setOpenCheckout(false)}
+                className="px-4 py-2 rounded-xl border border-gray-300"
+              >
+                Schließen
+              </button>
+              <a
+                href="#preise"
+                className="px-4 py-2 rounded-xl bg-brand-600 text-white"
+              >
+                Zu den Preisen
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+    </main>
+  );
+}
+
