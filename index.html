@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>feelmate – Nie wieder allein</title>
+    <meta name="description" content="Chatte anonym mit deiner persönlichen AI, die zuhört, motiviert und unterhält. 100% transparent: AI oder Mensch – du entscheidest." />
+    <link rel="icon" href="/favicon.ico">
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Smooth scroll */
+      html { scroll-behavior: smooth; }
+      .shadow-soft { box-shadow: 0 10px 25px rgba(0,0,0,.06); }
+      .card { border: 1px solid rgb(229 231 235); border-radius: 1.5rem; }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900">
+    <!-- Nav -->
+    <header class="sticky top-0 z-20 backdrop-blur bg-white/70 border-b border-gray-200">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <div class="h-8 w-8 rounded-2xl bg-gray-900"></div>
+          <span class="font-semibold tracking-tight">feelmate</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#features" class="hover:opacity-80">Features</a>
+          <a href="#preise" class="hover:opacity-80">Preise</a>
+          <a href="#faq" class="hover:opacity-80">FAQ</a>
+          <a href="#legal" class="hover:opacity-80">Impressum</a>
+        </nav>
+        <a href="#start" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gray-900 text-white text-sm font-medium shadow-soft hover:opacity-90">Jetzt starten</a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="max-w-6xl mx-auto px-4 pt-16 pb-14" id="start">
+      <div class="grid md:grid-cols-2 items-center gap-10">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-semibold leading-tight tracking-tight">
+            Nie wieder allein — dein 24/7 Begleiter.
+          </h1>
+          <p class="mt-4 text-lg text-gray-600">
+            Chatte anonym mit deiner persönlichen AI, die zuhört, motiviert und unterhält. 100% transparent: AI oder Mensch – du entscheidest.
+          </p>
+          <div class="mt-6 flex items-center gap-3">
+            <button onclick="openModal('trialModal')" class="px-5 py-3 rounded-2xl bg-gray-900 text-white font-medium shadow-soft hover:opacity-90">Chat gratis starten</button>
+            <a href="#preise" class="px-5 py-3 rounded-2xl border border-gray-300 font-medium hover:bg-gray-100">VIP werden</a>
+          </div>
+          <p class="mt-3 text-xs text-gray-500">Gratis: 5 Nachrichten zum Testen. Danach fair & flexibel mit Credits oder Abo.</p>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-3xl bg-white shadow-xl border border-gray-200 p-4">
+            <div class="h-full w-full rounded-2xl bg-gray-50 grid place-items-center text-gray-500 text-sm">
+              <div class="space-y-2 text-center">
+                <div class="text-xs uppercase tracking-widest">Demo</div>
+                <div class="text-base font-medium">Hier kommt dein Chat</div>
+                <div class="text-xs">(MVP: einfache Text-Chat-Komponente)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="border-t border-gray-200 bg-white">
+      <div class="max-w-6xl mx-auto px-4 py-14">
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="p-6 rounded-3xl border border-gray-200 shadow-soft bg-gray-50/50">
+            <h3 class="font-semibold">Transparent</h3>
+            <p class="mt-2 text-sm text-gray-600">Du siehst immer: AI oder echter Companion.</p>
+          </div>
+          <div class="p-6 rounded-3xl border border-gray-200 shadow-soft bg-gray-50/50">
+            <h3 class="font-semibold">24/7 verfügbar</h3>
+            <p class="mt-2 text-sm text-gray-600">Immer da, wenn du reden willst.</p>
+          </div>
+          <div class="p-6 rounded-3xl border border-gray-200 shadow-soft bg-gray-50/50">
+            <h3 class="font-semibold">Persönlich wählbar</h3>
+            <p class="mt-2 text-sm text-gray-600">Wähle Stil & Persönlichkeit: freundlich, humorvoll, motivierend.</p>
+          </div>
+          <div class="p-6 rounded-3xl border border-gray-200 shadow-soft bg-gray-50/50">
+            <h3 class="font-semibold">Datenschutz in DE</h3>
+            <p class="mt-2 text-sm text-gray-600">DSGVO-konform, klare Richtlinien.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="max-w-6xl mx-auto px-4 py-14">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-3xl border border-gray-200 bg-white shadow-soft">
+          <div class="text-xs font-mono text-gray-500">01</div>
+          <div class="mt-2 font-semibold">Starten</div>
+          <div class="mt-2 text-sm text-gray-600">Ohne Registrierung testen: 5 Gratis‑Nachrichten.</div>
+        </div>
+        <div class="p-6 rounded-3xl border border-gray-200 bg-white shadow-soft">
+          <div class="text-xs font-mono text-gray-500">02</div>
+          <div class="mt-2 font-semibold">Personalisieren</div>
+          <div class="mt-2 text-sm text-gray-600">Wähle Persönlichkeit & Themen (z. B. Flirten, Motivation, Smalltalk).</div>
+        </div>
+        <div class="p-6 rounded-3xl border border-gray-200 bg-white shadow-soft">
+          <div class="text-xs font-mono text-gray-500">03</div>
+          <div class="mt-2 font-semibold">Dranbleiben</div>
+          <div class="mt-2 text-sm text-gray-600">Mit Credits oder VIP‑Abo unbegrenzt weiterschreiben.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="preise" class="border-y border-gray-200 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 py-14">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="p-6 rounded-3xl border border-gray-200 bg-white shadow-soft">
+            <div class="text-xs uppercase tracking-widest text-gray-500">Credits</div>
+            <h3 class="mt-1 text-2xl font-semibold">100 Credits <span class="text-base font-normal text-gray-500">— 9,99 €</span></h3>
+            <ul class="mt-4 text-sm text-gray-600 list-disc pl-5 space-y-1">
+              <li>Flexible Nutzung für Chat & Extras</li>
+              <li>Kein Abo – einmalig kaufen</li>
+              <li>Ideal zum Einstieg</li>
+            </ul>
+            <button onclick="openModal('checkoutModal')" class="mt-5 inline-flex px-4 py-2 rounded-xl bg-gray-900 text-white text-sm font-medium hover:opacity-90">Jetzt Credits kaufen</button>
+          </div>
+          <div class="p-6 rounded-3xl border-2 border-gray-900 bg-white shadow-soft">
+            <div class="text-xs uppercase tracking-widest text-gray-500">Beliebt</div>
+            <h3 class="mt-1 text-2xl font-semibold">VIP Abo <span class="text-base font-normal text-gray-500">— 29,99 €/Monat</span></h3>
+            <ul class="mt-4 text-sm text-gray-600 list-disc pl-5 space-y-1">
+              <li>Unlimitierter AI‑Chat (Fair‑Use)</li>
+              <li>20% Rabatt auf Freelancer‑Chats (optional)</li>
+              <li>Exklusive Szenen & Themenräume</li>
+            </ul>
+            <button onclick="openModal('checkoutModal')" class="mt-5 inline-flex px-4 py-2 rounded-xl bg-gray-900 text-white text-sm font-medium hover:opacity-90">VIP werden</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="max-w-6xl mx-auto px-4 py-14">
+      <h2 class="text-2xl font-semibold">Häufige Fragen</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <details class="p-5 rounded-2xl border border-gray-200 bg-white shadow-soft">
+          <summary class="font-medium cursor-pointer">Chatte ich mit KI oder mit echten Menschen?</summary>
+          <p class="mt-2 text-sm text-gray-600">Beides ist möglich. Standard ist AI (günstig & 24/7). Für persönliche Chats kannst du verifizierte Companions buchen. Transparenz ist unser Grundsatz.</p>
+        </details>
+        <details class="p-5 rounded-2xl border border-gray-200 bg-white shadow-soft">
+          <summary class="font-medium cursor-pointer">Wie läuft die Bezahlung?</summary>
+          <p class="mt-2 text-sm text-gray-600">Entweder einmalig Credits kaufen oder monatliches VIP‑Abo. Zahlungen über Stripe/PayPal.</p>
+        </details>
+        <details class="p-5 rounded-2xl border border-gray-200 bg-white shadow-soft">
+          <summary class="font-medium cursor-pointer">Sind meine Daten sicher?</summary>
+          <p class="mt-2 text-sm text-gray-600">Ja. DSGVO‑konform, klare Löschfristen, verschlüsselte Übertragung. Du kannst dein Konto jederzeit löschen.</p>
+        </details>
+        <details class="p-5 rounded-2xl border border-gray-200 bg-white shadow-soft">
+          <summary class="font-medium cursor-pointer">Was bedeutet Fair‑Use?</summary>
+          <p class="mt-2 text-sm text-gray-600">Wir ermöglichen sehr hohe Nutzung ohne harte Limits. Nur bei Bot‑/Missbrauch behalten wir uns Eingriffe vor.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Footer / Legal -->
+    <footer id="legal" class="border-t border-gray-200 bg-white">
+      <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-6 text-sm">
+        <div>
+          <div class="font-semibold">feelmate</div>
+          <p class="mt-2 text-gray-600">Echte Gespräche. Jederzeit.</p>
+        </div>
+        <div class="space-y-2">
+          <a class="block hover:underline" href="#">Impressum</a>
+          <a class="block hover:underline" href="#">Datenschutz</a>
+          <a class="block hover:underline" href="#">AGB</a>
+        </div>
+        <div class="text-gray-500">
+          <p>© <span id="year"></span> feelmate. Alle Rechte vorbehalten.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="trialModal" class="hidden fixed inset-0 bg-black/40 grid place-items-center p-4">
+      <div class="bg-white rounded-2xl w-full max-w-md p-6 shadow-soft">
+        <h3 class="text-lg font-semibold">Gratis testen</h3>
+        <p class="mt-2 text-sm text-gray-600">Diese Demo zeigt nur das Layout. Den echten Chat aktivieren wir im MVP.</p>
+        <div class="mt-4 flex justify-end gap-2">
+          <button onclick="closeModal('trialModal')" class="px-4 py-2 rounded-xl border border-gray-300">Schließen</button>
+          <a href="#preise" class="px-4 py-2 rounded-xl bg-gray-900 text-white">Zu den Preisen</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="checkoutModal" class="hidden fixed inset-0 bg-black/40 grid place-items-center p-4">
+      <div class="bg-white rounded-2xl w-full max-w-md p-6 shadow-soft">
+        <h3 class="text-lg font-semibold">Kauf / Abo</h3>
+        <p class="mt-2 text-sm text-gray-600">Hier kommt dein Stripe/PayPal‑Checkout hin. (Phase 3)</p>
+        <div class="mt-4 flex justify-end gap-2">
+          <button onclick="closeModal('checkoutModal')" class="px-4 py-2 rounded-xl border border-gray-300">Schließen</button>
+          <a href="#faq" class="px-4 py-2 rounded-xl bg-gray-900 text-white">Mehr Infos</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
