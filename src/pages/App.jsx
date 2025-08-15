@@ -12,7 +12,7 @@ export default function App() {
           <img
             src="/images/hero.jpg"
             alt="Junge Frau lächelt und schreibt am Handy"
-            className="w-full h-full object-cover object-center opacity-90"
+            className="w-full h-full object-cover object-top"
             onError={(e)=>{e.currentTarget.src='/images/hero-placeholder.svg'}}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/50 to-white" />
@@ -66,13 +66,13 @@ export default function App() {
         <div className="grid md:grid-cols-3 gap-4">
           <img src="/images/cafe.jpg" alt="Frau im Café mit Handy"
                onError={(e)=>{e.currentTarget.src='/images/placeholder.svg'}}
-               className="rounded-2xl object-cover w-full h-64 md:h-56" />
+               className="w-full h-full object-cover object-top" />
           <img src="/images/laptop.jpg" alt="Frau am Laptop im Co-Working"
                onError={(e)=>{e.currentTarget.src='/images/placeholder.svg'}}
-               className="rounded-2xl object-cover w-full h-64 md:h-56" />
+               className="w-full h-full object-cover object-top" />
           <img src="/images/wine.jpg" alt="Reifere Frau zuhause – warmes Licht"
                onError={(e)=>{e.currentTarget.src='/images/placeholder.svg'}}
-               className="rounded-2xl object-cover w-full h-64 md:h-56" />
+               className="w-full h-full object-cover object-top" />
         </div>
         <p className="text-xs text-gray-500 mt-2">
           Symbolische Szenen – der Stil auf feelmate ist warm, diskret und respektvoll.
