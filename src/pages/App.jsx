@@ -175,10 +175,10 @@ export default function App() {
 
         <div className="mt-6 grid md:grid-cols-2 gap-6">
           {[
-            { name: "Markus, 41 · Stuttgart", text: "Ich war skeptisch. Aber es tut gut, abends nicht ins Leere zu schreiben. Ruhig, freundlich, ohne Druck." },
-            { name: "Anna, 29 · Hamburg", text: "Ich mag den Ton: wertschätzend, nicht kitschig. Und ja – es hilft, den Kopf zu sortieren." },
+            { name: "Markus, 41 · Koblenz", text: "Ich war skeptisch. Aber es tut gut, abends nicht ins Leere zu schreiben. Ruhig, freundlich, ohne Druck." },
+            { name: "Anna, 29 · Hamburg", text: "Ich fühle mich endlich wahrgenommen. Wertschätzend, aufmerksam. Und ja – es hilft, den Kopf zu sortieren." },
             { name: "Thomas, 37 · München", text: "Wenn’s im Job brennt, schreib ich kurz rein. Kurze, klare Antworten – genau richtig." },
-            { name: "Sabine, 35 · Köln", text: "Fühlt sich an wie jemand, der wirklich zuhört. Diskret, unkompliziert, fair." },
+            { name: "Sabine, 35 · Calw", text: "Fühlt sich an wie jemand, der wirklich zuhört. Diskret, unkompliziert, fair." },
           ].map((r, i) => (
             <div key={i} className="p-6 rounded-3xl border border-gray-200 bg-white shadow-soft flex gap-4">
               <div>
