@@ -91,7 +91,7 @@ export default function App() {
           <div className="p-6 rounded-3xl border border-gray-200 shadow-soft bg-white">
             <h3 className="font-semibold">Natürlich & respektvoll</h3>
             <p className="mt-2 text-sm text-gray-700">
-              Ein fester Chat-Stil, der zu dir passt: locker, humorvoll oder ruhig.
+              Hier triffst du jemanden der dir wirklich zuhört und dich versteht, der zu dir passt: locker, humorvoll oder ruhig.
             </p>
           </div>
           <div className="p-6 rounded-3xl border border-gray-200 shadow-soft bg-white">
@@ -124,7 +124,7 @@ export default function App() {
       <section className="max-w-6xl mx-auto px-6 pb-8">
         <img src="/images/sofa.jpg" alt="Frau entspannt auf dem Sofa mit Smartphone"
              onError={(e)=>{e.currentTarget.src='/images/placeholder-wide.svg'}}
-             className="rounded-2xl object-cover w-full h-64 md:h-72" />
+             className="w-full h-full object-cover object-top" />
       </section>
 
       {/* PREISE */}
