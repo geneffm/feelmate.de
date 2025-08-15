@@ -54,7 +54,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* BILDER-COLLAGE (abwechslungsreich, stilvoll) */}
+      {/* BILDER-COLLAGE */}
       <section id="bilder" className="max-w-6xl mx-auto px-6 py-10">
         <div className="grid md:grid-cols-3 gap-4">
           <img
@@ -79,7 +79,7 @@ export default function App() {
         </p>
       </section>
 
-      {/* WARUM (Pain Points) */}
+      {/* WARUM */}
       <section id="warum" className="max-w-6xl mx-auto px-6 pb-4">
         <div className="grid md:grid-cols-3 gap-6">
           <div className="p-6 rounded-3xl border border-gray-200 shadow-soft bg-white">
@@ -138,7 +138,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* REVIEWS (inline, kein extra Import nötig) */}
+      {/* REVIEWS */}
       <section className="bg-gray-50 py-12">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-2xl font-semibold">Was Nutzer sagen</h2>
@@ -197,7 +197,9 @@ export default function App() {
             </div>
             <h3 className="mt-1 text-2xl font-semibold">
               100 Einheiten{" "}
-              <span className="text-base font-normal text-gray-500">— 9,99 €</span>
+              <span className="text-base font-normal text-gray-500">
+                — 9,99 €
+              </span>
             </h3>
             <ul className="mt-4 text-sm text-gray-600 list-disc pl-5 space-y-1">
               <li>Flexibel für Nachrichten & Extras</li>
@@ -247,32 +249,4 @@ export default function App() {
           <div className="bg-white rounded-2xl w-full max-w-md p-6 shadow-soft">
             <h3 className="text-lg font-semibold">Gratis testen</h3>
             <p className="mt-2 text-sm text-gray-600">
-              Erlebe 5 Nachrichten kostenlos. Danach kannst du entscheiden, wie
-              du weitermachen willst.
-            </p>
-            <div className="mt-4 flex justify-end gap-2">
-              <button
-                onClick={() => setOpenTrial(false)}
-                className="px-4 py-2 rounded-xl border border-gray-300"
-              >
-                Schließen
-              </button>
-              <a
-                href="#preise"
-                className="px-4 py-2 rounded-xl bg-brand-600 text-white"
-              >
-                Zu den Preisen
-              </a>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {openCheckout && (
-        <div
-          className="fixed inset-0 bg-black/40 grid place-items-center p-4"
-          role="dialog"
-          aria-modal
-        >
-          <div className="bg-white rounded-2xl w-full max-w-md p-6 shadow-soft">
-            <h3 className="text-lg font-semibold">Kauf
+              Erlebe 5 Nachrichten kostenlos. Danach kannst
