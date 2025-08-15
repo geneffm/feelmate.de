@@ -54,7 +54,7 @@ export default function App() {
           <h2 className="text-xl font-semibold">Worum geht’s bei feelmate?</h2>
           <p className="mt-3 text-gray-700">
             feelmate ist ein begleitender Chat-Service für deinen Alltag. Du bekommst
-            ein festes Gegenüber mit Profil und Stil – zum Entladen, Sortieren und
+            ein emphatisches Gegenüber mit Profil und Stil – zum Entladen, Sortieren und
             Einfach-mal-nicht-allein-sein. Teile des Dienstes sind automatisiert;
             der Stil bleibt menschlich, respektvoll und unaufdringlich.
           </p>
@@ -75,7 +75,7 @@ export default function App() {
                className="w-full h-full object-cover object-top" />
         </div>
         <p className="text-xs text-gray-500 mt-2">
-          Symbolische Szenen – der Stil auf feelmate ist warm, diskret und respektvoll.
+          Symbolische Szenen – die Konversationen auf feelmate sind warm, diskret und respektvoll.
         </p>
       </section>
 
@@ -108,7 +108,7 @@ export default function App() {
         <div className="grid md:grid-cols-3 gap-6">
           {[
             { n: "01", t: "Losschreiben", d: "Kostenlos testen – ein paar Nachrichten, um ein Gefühl zu bekommen." },
-            { n: "02", t: "Anpassen", d: "Ton & Themen wählen. Dein Gegenüber bleibt konsistent und merkt sich Wichtiges." },
+            { n: "02", t: "Sich verstanden fühlen", d: "Einfach mal aus der Seele sprechen oder nach Rat fragen, hier bekommst du immer eine Antwort." },
             { n: "03", t: "Dranbleiben", d: "Mit Guthaben oder Mitgliedschaft entspannt weiterschreiben – fair & flexibel." }
           ].map((s, i) => (
             <div key={i} className="p-6 rounded-3xl border border-gray-200 bg-white shadow-soft">
