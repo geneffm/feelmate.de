@@ -206,20 +206,18 @@ export default function App() {
       </section>
 
       {/* FOOTER / RECHT */}
-      <footer className="border-t border-gray-200">
-        <div className="max-w-6xl mx-auto px-6 py-8 text-sm text-gray-600">
-          <div>
-            Transparenz: feelmate ist ein virtueller Begleit-Service.
-            Persönliche Treffen sind nicht Bestandteil des Angebots.
-            Teile der Kommunikation können automatisiert sein. Details in den{" "}
-            <a className="underline" href="/agb">AGB</a> und der{" "}
-            <a className="underline" href="/datenschutz">Datenschutzerklärung</a>.
-          </div>
-          <div className="mt-3">
-            <a className="underline" href="/impressum">Impressum</a>
-          </div>
-        </div>
-      </footer>
+import { Link } from 'react-router-dom'
+...
+<p>
+  Transparenz: feelmate ist ein virtueller Begleit-Service.
+  Persönliche Treffen sind nicht Bestandteil des Angebots.
+  Details in den <Link className="underline" to="/agb">AGB</Link> und der{" "}
+  <Link className="underline" to="/datenschutz">Datenschutzerklärung</Link>.
+</p>
+<p className="mt-3">
+  <Link className="underline" to="/impressum">Impressum</Link>
+</p>
+
 
       {/* TRIAL MODAL */}
       {openTrial && (
