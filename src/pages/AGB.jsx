@@ -89,3 +89,25 @@ export default function AGB() {
     </section>
   );
 }
+
+export default function Widerruf() {
+  return (
+    <section className="bg-gray-50 py-16">
+      <div className="max-w-4xl mx-auto px-6">
+        <h2 className="text-3xl font-bold mb-6">Widerrufsbelehrung</h2>
+
+        <h3 className="text-xl font-semibold mt-8 mb-2">1. Widerrufsrecht</h3>
+        <p className="mb-4">
+          Sie haben das Recht, binnen 14 Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. 
+          Die Widerrufsfrist beträgt 14 Tage ab dem Tag des Vertragsabschlusses.
+        </p>
+
+        <h3 className="text-xl font-semibold mt-8 mb-2">2. Ausübung des Widerrufs</h3>
+        <p className="mb-4">
+          Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (die Kontaktdaten entnehmen Sie bitte dem{" "}
+          <a href="/impressum" className="text-blue-600 underline">Impressum</a>) 
+          mittels einer eindeutigen Erklärung (z. B. ein mit der Post versandter Brief oder E-Mail) 
+          über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. 
+          Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.
+        </
+
