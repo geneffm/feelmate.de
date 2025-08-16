@@ -1,50 +1,91 @@
 export default function AGB() {
   return (
-    <main className="max-w-3xl mx-auto px-4 py-12 text-sm leading-6 text-gray-700">
-      <h1 className="text-2xl font-semibold">Allgemeine Geschäftsbedingungen (AGB)</h1>
+    <section className="bg-gray-50 py-16">
+      <div className="max-w-4xl mx-auto px-6">
+        <h2 className="text-3xl font-bold mb-6">Allgemeine Geschäftsbedingungen (AGB)</h2>
 
-      <h2 className="mt-6 font-semibold">1. Geltungsbereich</h2>
-      <p className="mt-2">Diese AGB regeln die Nutzung der Plattform „feelmate“.</p>
+        <h3 className="text-xl font-semibold mt-8 mb-2">1. Geltungsbereich</h3>
+        <p>
+          Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge und Nutzungen der Plattform
+          <strong> Feelmate.de</strong> zwischen dem Betreiber und den registrierten Nutzern. Mit der Registrierung
+          akzeptieren die Nutzer diese AGB.
+        </p>
 
-      <h2 className="mt-6 font-semibold">2. Leistung &amp; Natur des Dienstes</h2>
-      <ul className="list-disc pl-6 mt-2">
-        <li>Rein virtueller Begleitservice (Chat). Keine persönlichen Treffen.</li>
-        <li>Teile der Kommunikation können automatisiert sein (Details in der Datenschutzerklärung).</li>
-      </ul>
+        <h3 className="text-xl font-semibold mt-8 mb-2">2. Leistungsbeschreibung</h3>
+        <p>
+          Feelmate bietet eine digitale Kommunikations- und Unterhaltungsplattform. 
+          Nachrichten werden durch Moderatoren oder automatisierte Systeme (Chatbots) beantwortet.
+          Ziel des Angebots ist ausschließlich die virtuelle Unterhaltung und soziale Interaktion.
+          Eine Vermittlung von realen Treffen, partnerschaftlichen Kontakten oder körperlichen Begegnungen
+          ist nicht Bestandteil der Leistung.
+        </p>
 
-      <h2 className="mt-6 font-semibold">3. Verhaltensregeln</h2>
-      <ul className="list-disc pl-6 mt-2">
-        <li>Untersagt: Inhalte zu Minderjährigen, Gewaltverherrlichung, Extremismus, Aufrufe zu Straftaten, Drohungen, Hassrede, Belästigung.</li>
-        <li>Verstöße führen zur Sperre; Erstattung bereits genutzter Einheiten ist ausgeschlossen.</li>
-        <li>Bei strafrechtlicher Relevanz können Inhalte an Behörden übermittelt werden.</li>
-      </ul>
+        <h3 className="text-xl font-semibold mt-8 mb-2">3. Nutzungsvoraussetzungen</h3>
+        <p>
+          Nutzer müssen mindestens 18 Jahre alt sein und die volle Geschäftsfähigkeit besitzen.
+          Mit der Registrierung bestätigen Nutzer, dass sie diese Voraussetzungen erfüllen.
+        </p>
 
-      <h2 className="mt-6 font-semibold">4. Entgelte &amp; Zahlung</h2>
-      <ul className="list-disc pl-6 mt-2">
-        <li>Guthaben-Modelle und Mitgliedschaften; Preise werden vor Kauf angezeigt.</li>
-        <li>Zahlung über anerkannte Anbieter (z. B. Stripe/PayPal).</li>
-        <li>Kein Anspruch auf Rückerstattung bereits genutzter Einheiten.</li>
-      </ul>
+        <h3 className="text-xl font-semibold mt-8 mb-2">4. Kosten & Zahlungsbedingungen</h3>
+        <p>
+          Die Nutzung von Feelmate ist teilweise kostenpflichtig. 
+          Jeder neue Nutzer erhält ein Startguthaben für Testnachrichten. 
+          Für weitere Nachrichten oder Zusatzfunktionen ist der Erwerb von Guthaben erforderlich.
+        </p>
+        <p className="mt-2">
+          Zahlungen erfolgen ausschließlich über die auf der Plattform angegebenen Zahlungsdienstleister.
+          Es werden nur die auf der Website genannten Preise und Tarife berechnet.
+        </p>
 
-      <h2 className="mt-6 font-semibold">5. Widerruf</h2>
-      <p className="mt-2">
-        Bei digitalen Inhalten kann das Widerrufsrecht erlöschen, wenn der Nutzer zustimmt, dass vor Ablauf der Widerrufsfrist mit der Leistung begonnen wird.
-      </p>
+        <h3 className="text-xl font-semibold mt-8 mb-2">5. Kündigung & Beendigung</h3>
+        <p>
+          Nutzer können ihr Konto jederzeit selbstständig löschen oder durch schriftliche Mitteilung an den Betreiber kündigen.
+          Bereits gezahlte Beträge für genutzte Leistungen werden nicht erstattet.
+        </p>
 
-      <h2 className="mt-6 font-semibold">6. Haftung</h2>
-      <p className="mt-2">
-        Haftung bei Vorsatz und grober Fahrlässigkeit; im Übrigen beschränkt auf den vertragstypischen, vorhersehbaren Schaden.
-      </p>
+        <h3 className="text-xl font-semibold mt-8 mb-2">6. Verhaltensregeln</h3>
+        <p>
+          Es ist untersagt, über die Plattform Inhalte zu verbreiten, die:
+        </p>
+        <ul className="list-disc ml-6 mt-2">
+          <li>gegen geltendes Recht verstoßen,</li>
+          <li>beleidigend, diskriminierend, gewaltverherrlichend oder pornografisch sind,</li>
+          <li>zu Straftaten anstiften oder diese verharmlosen,</li>
+          <li>Rechte Dritter (z. B. Urheberrechte, Markenrechte) verletzen.</li>
+        </ul>
+        <p className="mt-2">
+          Bei Verstößen behält sich der Betreiber das Recht vor, Konten sofort zu sperren und ggf. rechtliche Schritte einzuleiten.
+        </p>
 
-      <h2 className="mt-6 font-semibold">7. Laufzeit &amp; Kündigung</h2>
-      <p className="mt-2">
-        Mitgliedschaften können zum nächsten Abrechnungszeitraum gekündigt werden, sofern nichts anderes ausgewiesen ist.
-      </p>
+        <h3 className="text-xl font-semibold mt-8 mb-2">7. Haftung</h3>
+        <p>
+          Der Betreiber übernimmt keine Haftung für die Richtigkeit, Vollständigkeit oder Qualität der bereitgestellten Inhalte.
+          Eine Haftung für Schäden, die durch die Nutzung der Plattform entstehen, ist ausgeschlossen,
+          soweit nicht Vorsatz oder grobe Fahrlässigkeit des Betreibers vorliegt.
+        </p>
 
-      <h2 className="mt-6 font-semibold">8. Schlussbestimmungen</h2>
-      <p className="mt-2">Es gilt deutsches Recht. Gerichtsstand ist – soweit zulässig – der Sitz des Betreibers.</p>
+        <h3 className="text-xl font-semibold mt-8 mb-2">8. Datenschutz</h3>
+        <p>
+          Der Schutz personenbezogener Daten hat höchste Priorität. 
+          Alle Informationen hierzu finden sich in unserer gesonderten Datenschutzerklärung.
+        </p>
 
-      <p className="mt-8"><a className="text-brand-600 underline" href="/">Zur Startseite</a></p>
-    </main>
+        <h3 className="text-xl font-semibold mt-8 mb-2">9. Änderungen der AGB</h3>
+        <p>
+          Der Betreiber behält sich vor, diese AGB jederzeit mit Wirkung für die Zukunft zu ändern.
+          Nutzer werden rechtzeitig über Änderungen informiert.
+        </p>
+
+        <h3 className="text-xl font-semibold mt-8 mb-2">10. Gerichtsstand & Recht</h3>
+        <p>
+          Es gilt das Recht der Bundesrepublik Deutschland. 
+          Gerichtsstand für alle Streitigkeiten ist – soweit gesetzlich zulässig – der Sitz des Betreibers.
+        </p>
+
+        <p className="mt-8 text-sm text-gray-500">
+          Stand: {new Date().getFullYear()}
+        </p>
+      </div>
+    </section>
   );
 }
