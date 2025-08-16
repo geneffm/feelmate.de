@@ -1,48 +1,98 @@
 export default function Datenschutz() {
   return (
-    <main className="max-w-3xl mx-auto px-4 py-12 text-sm leading-6 text-gray-700">
-      <h1 className="text-2xl font-semibold">Datenschutzerklärung</h1>
-      <p className="mt-4">Verantwortlich im Sinne der DSGVO ist der im Impressum genannte Betreiber.</p>
+    <section className="bg-gray-50 py-16">
+      <div className="max-w-4xl mx-auto px-6">
+        <h2 className="text-3xl font-bold mb-6">Datenschutzerklärung</h2>
 
-      <h2 className="mt-6 font-semibold">1. Zwecke</h2>
-      <ul className="list-disc pl-6 mt-2">
-        <li>Bereitstellung des Online-Dienstes und Kommunikationsfunktionen</li>
-        <li>Abrechnung über Zahlungsdienstleister</li>
-        <li>Missbrauchsverhinderung, Sicherheit, Support</li>
-        <li>Optional: Analyse &amp; Verbesserung (nur mit Einwilligung)</li>
-      </ul>
+        <p className="mb-4">
+          Der Schutz Ihrer personenbezogenen Daten ist uns ein besonderes Anliegen. 
+          Wir verarbeiten Ihre Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen 
+          (DSGVO, BDSG, TMG). In dieser Erklärung informieren wir Sie über die wichtigsten Aspekte 
+          der Datenverarbeitung im Rahmen unserer Website <strong>Feelmate.de</strong>.
+        </p>
 
-      <h2 className="mt-6 font-semibold">2. Rechtsgrundlagen</h2>
-      <ul className="list-disc pl-6 mt-2">
-        <li>Art. 6 Abs. 1 lit. b DSGVO (Vertrag/Anbahnung)</li>
-        <li>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse: Sicherheit/Betrieb)</li>
-        <li>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, z. B. Marketing/Analyse)</li>
-      </ul>
+        <h3 className="text-xl font-semibold mt-8 mb-2">1. Verantwortliche Stelle</h3>
+        <p>
+          Verantwortlich für die Verarbeitung Ihrer personenbezogenen Daten ist der Betreiber von Feelmate.de. 
+          Die vollständigen Kontaktdaten entnehmen Sie bitte dem <a href="/impressum" className="text-blue-600 underline">Impressum</a>.
+        </p>
 
-      <h2 className="mt-6 font-semibold">3. Empfänger</h2>
-      <ul className="list-disc pl-6 mt-2">
-        <li>Hosting/Deployment: Vercel</li>
-        <li>Datenbank/Auth (geplant): Supabase (EU)</li>
-        <li>Zahlung: Stripe / PayPal</li>
-        <li>Automatisierte Moderation</li>
-      </ul>
+        <h3 className="text-xl font-semibold mt-8 mb-2">2. Erhebung und Verarbeitung personenbezogener Daten</h3>
+        <p>
+          Wir erheben, speichern und verarbeiten personenbezogene Daten (z. B. Name, E-Mail-Adresse, Zahlungsdaten) 
+          nur, soweit dies für die Bereitstellung unserer Dienste erforderlich ist. 
+          Darüber hinaus werden keine personenbezogenen Daten ohne Ihre ausdrückliche Einwilligung verarbeitet.
+        </p>
 
-      <h2 className="mt-6 font-semibold">4. Speicherdauer</h2>
-      <p className="mt-2">Nur solange erforderlich bzw. gesetzlich vorgeschrieben.</p>
+        <h3 className="text-xl font-semibold mt-8 mb-2">3. Zweck der Datenverarbeitung</h3>
+        <p>
+          Die Verarbeitung Ihrer Daten erfolgt zu folgenden Zwecken:
+        </p>
+        <ul className="list-disc ml-6 mt-2">
+          <li>Bereitstellung und Verbesserung unseres Dienstes</li>
+          <li>Abwicklung von Zahlungen</li>
+          <li>Kommunikation mit Nutzern</li>
+          <li>Erfüllung rechtlicher Verpflichtungen</li>
+        </ul>
 
-      <h2 className="mt-6 font-semibold">5. Betroffenenrechte</h2>
-      <ul className="list-disc pl-6 mt-2">
-        <li>Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit</li>
-        <li>Widerspruch gegen Verarbeitung</li>
-        <li>Widerruf erteilter Einwilligungen</li>
-      </ul>
+        <h3 className="text-xl font-semibold mt-8 mb-2">4. Speicherung & Löschung</h3>
+        <p>
+          Personenbezogene Daten werden nur so lange gespeichert, wie es für die Erbringung unserer Dienste 
+          erforderlich ist oder wir gesetzlich dazu verpflichtet sind. Nach Ablauf dieser Fristen 
+          werden die Daten gelöscht.
+        </p>
 
-      <h2 className="mt-6 font-semibold">6. Hinweis zur Kommunikation</h2>
-      <p className="mt-2">
-        Der Dienst stellt eine persönliche Begleitung zur Verfügung. Persönliche Treffen sind nicht Teil des Angebots.
-      </p>
+        <h3 className="text-xl font-semibold mt-8 mb-2">5. Weitergabe von Daten</h3>
+        <p>
+          Eine Weitergabe Ihrer Daten an Dritte erfolgt ausschließlich im Rahmen der Vertragserfüllung 
+          (z. B. Zahlungsanbieter) oder wenn wir gesetzlich dazu verpflichtet sind. 
+          Eine darüber hinausgehende Weitergabe findet nicht statt.
+        </p>
 
-      <p className="mt-8"><a className="text-brand-600 underline" href="/">Zur Startseite</a></p>
-    </main>
+        <h3 className="text-xl font-semibold mt-8 mb-2">6. Sicherheit</h3>
+        <p>
+          Wir setzen technische und organisatorische Sicherheitsmaßnahmen ein, um Ihre Daten 
+          gegen Manipulation, Verlust, Zerstörung oder unbefugten Zugriff zu schützen.
+        </p>
+
+        <h3 className="text-xl font-semibold mt-8 mb-2">7. Cookies</h3>
+        <p>
+          Unsere Website verwendet Cookies, um die Benutzerfreundlichkeit zu erhöhen und bestimmte Funktionen 
+          zu ermöglichen. Sie können die Speicherung von Cookies in den Einstellungen Ihres Browsers verhindern, 
+          was jedoch die Funktionalität unserer Seite einschränken kann.
+        </p>
+
+        <h3 className="text-xl font-semibold mt-8 mb-2">8. Rechte der Nutzer</h3>
+        <p>
+          Sie haben jederzeit das Recht auf:
+        </p>
+        <ul className="list-disc ml-6 mt-2">
+          <li>Auskunft über Ihre gespeicherten Daten</li>
+          <li>Berichtigung unrichtiger Daten</li>
+          <li>Löschung Ihrer Daten („Recht auf Vergessenwerden“)</li>
+          <li>Einschränkung der Verarbeitung</li>
+          <li>Datenübertragbarkeit</li>
+          <li>Widerruf einer erteilten Einwilligung</li>
+        </ul>
+
+        <h3 className="text-xl font-semibold mt-8 mb-2">9. Umgang mit illegalen Inhalten</h3>
+        <p>
+          Es ist untersagt, über unsere Plattform illegale Inhalte zu verbreiten oder gegen geltendes Recht 
+          zu verstoßen. Verdächtige Inhalte oder Aktivitäten können protokolliert und den zuständigen Behörden 
+          gemeldet werden.
+        </p>
+
+        <h3 className="text-xl font-semibold mt-8 mb-2">10. Kontakt</h3>
+        <p>
+          Wenn Sie Fragen zum Datenschutz haben oder von Ihren Rechten Gebrauch machen möchten, 
+          kontaktieren Sie uns bitte über die im Impressum angegebenen Kontaktdaten.
+        </p>
+
+        <p className="mt-8 text-sm text-gray-500">
+          Stand: {new Date().getFullYear()}
+        </p>
+      </div>
+    </section>
   );
 }
+
